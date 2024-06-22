@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatriz Ibarra Cosmetóloga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #003366; /* Azul primario */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #002244; /* Azul más oscuro */
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #001122;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #inicio, #servicios, #contacto {
+            padding: 20px;
+            background: white;
+            margin-top: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            height: auto;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .galeria img {
+            flex: 1 1 calc(33% - 10px);
+        }
+        footer {
+            background-color: #003366; /* Azul primario */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+        }
+        .formulario input, .formulario textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .formulario button {
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .formulario button:hover {
+            background-color: #002244;
+        }
+        .sociales a {
+            margin: 0 10px;
+            color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beatriz Ibarra Cosmetóloga</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Mis Servicios</a>
+        <a href="#contacto">Datos de Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="inicio">
+            <h2>Bienvenida</h2>
+            <p>Hola, soy Beatriz Ibarra, tu cosmetóloga de confianza. Estoy aquí para ofrecerte los mejores servicios y tratamientos personalizados para que te sientas y te veas espectacular.</p>
+        </section>
+        <section id="servicios">
+            <h2>Mis Servicios</h2>
+            <div class="galeria">
+                <img src="servicio1.jpg" alt="Servicio 1">
+                <img src="servicio2.jpg" alt="Servicio 2">
+                <img src="servicio3.jpg" alt="Servicio 3">
+                <!-- Añadir más imágenes según sea necesario -->
+            </div>
+            <h3>Paquetes</h3>
+            <ul>
+                <li>Paquete 1: Descripción del paquete 1</li>
+                <li>Paquete 2: Descripción del paquete 2</li>
+                <li>Paquete 3: Descripción del paquete 3</li>
+                <!-- Añadir más paquetes según sea necesario -->
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2>Datos de Contacto</h2>
+            <p>Ubicación: Octava Poniente #459, Col. Jardines de Nvo México, Zapopan Jal.</p>
+            <p>Teléfono: [Tu número de teléfono]</p>
+            <p>Correo Electrónico: [Tu correo electrónico]</p>
+            <h3>Formulario de Contacto</h3>
+            <form class="formulario">
+                <input type="text" name="nombre" placeholder="Tu Nombre">
+                <input type="email" name="email" placeholder="Tu Correo Electrónico">
+                <textarea name="mensaje" rows="4" placeholder="Tu Mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <h3>Sígueme en las redes sociales</h3>
+            <div class="sociales">
+                <a href="https://www.instagram.com/cosmetologa_bea" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/ClinicaEsteticaIntegral" target="_blank">Facebook</a>
+                <!-- Añadir más enlaces según sea necesario -->
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Beatriz Ibarra Cosmetóloga. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
